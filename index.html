@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วงล้อสุ่มสี</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>วงล้อสุ่มสี</h1>
+        
+        <div class="wheel-container">
+            <canvas id="wheel" width="500" height="500"></canvas>
+            <button id="spin-btn">หมุนวงล้อ</button>
+        </div>
+
+        <div class="results">
+            <h2>ผลการสุ่ม</h2>
+            <p id="result-text">กดปุ่มหมุนวงล้อเพื่อเริ่มต้น</p>
+        </div>
+
+        <div class="color-stats">
+            <h2>สถิติการแบ่งสี</h2>
+            <div class="stats-container">
+                <div class="stat-item" style="color: red">
+                    <span>สีแดง:</span>
+                    <span id="red-count">0/38</span>
+                </div>
+                <div class="stat-item" style="color: green">
+                    <span>สีเขียว:</span>
+                    <span id="green-count">0/38</span>
+                </div>
+                <div class="stat-item" style="color: blue">
+                    <span>สีน้ำเงิน:</span>
+                    <span id="blue-count">0/38</span>
+                </div>
+                <div class="stat-item" style="color: #DAA520">
+                    <span>สีเหลือง:</span>
+                    <span id="yellow-count">0/38</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
